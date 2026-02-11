@@ -57,7 +57,7 @@ const socials = [
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-3">
       {socials.map((social) => (
         <a
           key={social.name}
@@ -65,7 +65,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Follow us on ${social.name}`}
-          className="group relative flex items-center justify-center w-11 h-11 rounded-full border border-border bg-card/50 backdrop-blur-sm text-muted-foreground transition-all duration-300 hover:text-foreground hover:border-primary hover:shadow-[0_0_15px_hsl(var(--neon-pink)/0.4)] hover:scale-110"
+          className="group flex items-center justify-center w-10 h-10 rounded-lg border border-border bg-card/50 backdrop-blur-sm text-muted-foreground transition-all duration-300 hover:text-primary hover:border-primary/50 hover:shadow-[0_0_15px_hsl(var(--cyber-teal)/0.3)] hover:scale-110"
         >
           {social.icon}
         </a>
